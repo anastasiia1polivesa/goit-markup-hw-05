@@ -857,6 +857,9 @@ span {
   fill: #4D5AE5;
 }
 
+.box-form {
+  margin-bottom: 16px;
+}
 .modal-box {
   margin-bottom: 24px;
 }
