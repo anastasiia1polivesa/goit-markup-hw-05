@@ -796,7 +796,7 @@ span {
 }
 
 .form-modal {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-name {
@@ -823,14 +823,14 @@ span {
 .text-input:focus {
   border-color: #4d5ae5;
 }
-.modal-svg {
+.modal-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-svg:focus {
+.modal-icon:focus {
   fill: #4d5ae5;
 }
 
@@ -852,15 +852,22 @@ span {
 .text-modal:focus {
   border-color: #4d5ae5;
 }
+
+.text-input:focus + .modal-icon {
+  fill: #4D5AE5;
+}
+
 .modal-box {
   margin-bottom: 24px;
 }
+
 .term-box {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 .blue-text {
   width: 16px;
   height: 16px;
@@ -870,26 +877,26 @@ span {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
+  margin-right: 8px;
 }
 .blue-text {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  fill: transparent;
 }
-input:checked span {
+.input-box:checked + .term-box .blue-text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
 
 .label-link {
-  color: #4d5ae5;;
+  color: #4d5ae5;
+  text-decoration-line: underline;
 }
 
 .modal-btn {
-  display: block;
-  margin-left: 120px;
-  align-self: center;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
@@ -904,4 +911,6 @@ input:checked span {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 24px;
+  display: block;
+  margin-left: 100px;
 }
