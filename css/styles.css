@@ -482,7 +482,7 @@ link {
   fill: #f4f4fd;
 }
 .footer-media {
-  margin-right: 120px;
+  margin-right: auto;
 }
 
 .subscribe-title {
@@ -913,7 +913,6 @@ span {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
   display: block;
   margin-left: 100px;
 }
